@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="xsiry">
+    <meta name="email" content="xsiries@gmail.com">
+    <meta name="date" content="2017-10-23 16:11:00">
+    <title></title>
+
+	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/summernote/summernote.css">
+</head>
+	<div class="summernote"></div>
+<body>
+</body>
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/summernote/summernote.min.js"></script>
+<script type="text/javascript" src="js/summernote/lang/summernote-zh-CN.js"></script>
+<script type="text/javascript">
+	$('.summernote').summernote({
+      height: 300, //窗体高度
+      focus: false,
+      tabsize: 2,
+      lang: 'zh-CN',
+      dialogsInBody: true,
+      disableDragAndDrop: true,
+      placeholder: '请输入..',
+      toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'italic', 'underline', 'strikethrough', 'removeFormat', 'clear']],
+
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['font', ['height']],
+        ['table', ['table']],
+        ['insert', ['hr', 'link', 'video', 'picture']],
+        ['view', ['fullscreen', 'codeview']],
+        ['fontname', ['fontname']]
+      ]
+    });
+
+    //取值 $('.summernote').summernote('code');
+    //赋值 $('.summernote').summernote('code', '213213123');
+</script>
+</html>
